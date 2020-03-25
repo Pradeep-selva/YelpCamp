@@ -64,6 +64,6 @@ app.use('/campgrounds/:id/comments',commentRoutes)
 app.use(indexRoutes)
 
 //listening on port
-app.listen(5000||process.env.PORT,'0.0.0.0', ()=>{
+app.listen(process.env.PORT||5000,'0.0.0.0', ()=>{
     console.log('The Yelp camp server is Running!')
 })
