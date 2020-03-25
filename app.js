@@ -65,5 +65,6 @@ app.use(indexRoutes)
 
 //listening on port
 app.listen(process.env.PORT||5000,'0.0.0.0', ()=>{
+    console.log(process.env.DATABASEURL)
     console.log('The Yelp camp server is Running!')
 })
