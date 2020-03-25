@@ -58,13 +58,12 @@ mongoose.connect( url ,{
     console.log("ERROR: "+err)
 })
 
-
 //app routes
 app.use('/campgrounds',campgroundRoutes)
 app.use('/campgrounds/:id/comments',commentRoutes)
 app.use(indexRoutes)
 
 //listening on port
-app.listen(5000||process.env.PORT, ()=>{
+app.listen(5000||process.env.PORT,'0.0.0.0', ()=>{
     console.log('The Yelp camp server is Running!')
 })
